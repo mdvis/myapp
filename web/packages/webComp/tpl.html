@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>web component</title>
+  </head>
+  <body>
+    <cst-ele from="peiking" to="sanfan"> </cst-ele>
+
+    <cst-ele from="peiking" to="sanfan">
+      <span slot="my-slot"> <p>slot</p> </span>
+    </cst-ele>
+
+    <script defer src="./tpl.js"></script>
+
+    <template id="tpl">
+      <p>my tpl</p>
+      <slot name="my-slot">slot</slot>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<html lang="en">
+  <head/>
+  <body>
+    <div> logged in as {{ name }} !!! </div>
+    <div>{{ get_flashed_messages() }}</div>
+  </body>
+</html>

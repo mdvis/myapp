@@ -1,0 +1,558 @@
+{
+    "root": {
+        "data": {
+            "id": "clstst851k00",
+            "created": 1659167522138,
+            "text": "Session"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "clstt7dr0gg0",
+                    "created": 1659167552952,
+                    "text": "Manager",
+                    "layout_mind_offset": {
+                        "x": -362.99999515712227,
+                        "y": 318.9999985098837
+                    },
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "clsttay4e740",
+                            "created": 1659167560714,
+                            "text": "CookieName",
+                            "layout_right_offset": {
+                                "x": 92,
+                                "y": -32
+                            },
+                            "layout_left_offset": {
+                                "x": -305.49999452382326,
+                                "y": 144.4999986216427
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clsttdnmzog0",
+                            "created": 1659167566610,
+                            "text": "lock",
+                            "layout_right_offset": {
+                                "x": 112,
+                                "y": -42
+                            },
+                            "layout_left_offset": {
+                                "x": -290.7499945051968,
+                                "y": 134.99999873340147
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clsttfei6wo0",
+                            "created": 1659167570412,
+                            "text": "provider",
+                            "layout_right_offset": {
+                                "x": 109,
+                                "y": -47
+                            },
+                            "layout_left_offset": {
+                                "x": -297.7499945051968,
+                                "y": 125.99999873340147
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clsttgw23ds0",
+                            "created": 1659167573651,
+                            "text": "maxlifetime",
+                            "layout_right_offset": {
+                                "x": 99,
+                                "y": -53
+                            },
+                            "layout_left_offset": {
+                                "x": -304.7499945051968,
+                                "y": 115.99999873340147
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clstvdhbxrc0",
+                            "created": 1659167722957,
+                            "text": "M",
+                            "expandState": "expand",
+                            "layout_right_offset": {
+                                "x": 21,
+                                "y": -106
+                            },
+                            "layout_left_offset": {
+                                "x": -318.2499946169554,
+                                "y": -72.49999877065397
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clstvfmp3xk0",
+                                    "created": 1659167727635,
+                                    "text": "SessionStart",
+                                    "layout_right_offset": {
+                                        "x": 11,
+                                        "y": -27
+                                    },
+                                    "layout_left_offset": {
+                                        "x": -191.99999687075626,
+                                        "y": 8.499999888241518
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clstvo5qwfs0",
+                                            "created": 1659167746201,
+                                            "text": "r.Cookie",
+                                            "layout_left_offset": {
+                                                "x": -257.4999961629509,
+                                                "y": -4.99999992549408
+                                            }
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clstvsno84g0",
+                                            "created": 1659167755992,
+                                            "text": "manager.provider.SessionInit",
+                                            "layout_left_offset": {
+                                                "x": -379.99999433755875,
+                                                "y": -9.999999850988331
+                                            }
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clstw4irtc00",
+                                            "created": 1659167781818,
+                                            "text": "http.SetCookie",
+                                            "layout_left_offset": {
+                                                "x": -304.99999545514584,
+                                                "y": -18.74999972060317
+                                            }
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clstw9vixgg0",
+                                            "created": 1659167793473,
+                                            "text": "manger.provider.SessionRead",
+                                            "layout_left_offset": {
+                                                "x": -383.7499942816794,
+                                                "y": -22.499999664723816
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "clstxh1d0y00",
+                                    "created": 1659167887427,
+                                    "text": "SessionDestroy",
+                                    "layout_right_offset": {
+                                        "x": 4,
+                                        "y": -26
+                                    },
+                                    "layout_left_offset": {
+                                        "x": -204.999996945262,
+                                        "y": -26.249999608844234
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clstxwt8ukg0",
+                                            "created": 1659167921765,
+                                            "text": "manager.provider.SessionDestroy",
+                                            "layout_left_offset": {
+                                                "x": -439.9999934434891,
+                                                "y": 1.2499999813736338
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "clsu22qwqjk0",
+                                    "created": 1659168248141,
+                                    "text": "GC",
+                                    "layout_right_offset": {
+                                        "x": 11,
+                                        "y": -57
+                                    },
+                                    "layout_left_offset": {
+                                        "x": -172.49999742954964,
+                                        "y": -37.4999994412064
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clsu28wbh6g0",
+                                            "created": 1659168261529,
+                                            "text": "manager.provider.SessionGC",
+                                            "layout_right_offset": {
+                                                "x": 25,
+                                                "y": 26
+                                            },
+                                            "layout_left_offset": {
+                                                "x": -343.74999487772584,
+                                                "y": 1.2499999813736622
+                                            }
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clsu2h3ck1c0",
+                                            "created": 1659168279368,
+                                            "text": "manager.maxlifetime",
+                                            "layout_right_offset": {
+                                                "x": 25,
+                                                "y": 16
+                                            },
+                                            "layout_left_offset": {
+                                                "x": -301.2499955110252,
+                                                "y": -6.249999906867629
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "clsu3ogq61s0",
+                            "created": 1659168373779,
+                            "text": "I",
+                            "layout_right_offset": {
+                                "x": 33,
+                                "y": -201
+                            },
+                            "layout_left_offset": {
+                                "x": -241.99999634921562,
+                                "y": -210.9999964237214
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clsu3qo0tzs0",
+                                    "created": 1659168378573,
+                                    "text": "Provider",
+                                    "layout_left_offset": {
+                                        "x": -162.9999972432853,
+                                        "y": 55.999998882413195
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "clsu3tk5qm80",
+                                    "created": 1659168384870,
+                                    "text": "Session",
+                                    "layout_left_offset": {
+                                        "x": -155.99999724328524,
+                                        "y": -39.49999944120634
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "clstua68aug0",
+                            "created": 1659167637392,
+                            "text": "Register",
+                            "layout_left_offset": {
+                                "x": -290,
+                                "y": -217
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "clstx5xs6e80",
+                    "created": 1659167863266,
+                    "text": "count",
+                    "layout_mind_offset": {
+                        "x": -347.00000067055214,
+                        "y": -140.49999981373549
+                    }
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "clsttnw06h40",
+                    "created": 1659167588884,
+                    "text": "NewManager",
+                    "layout_mind_offset": {
+                        "x": -369.5000004097818,
+                        "y": -316.75000068917865
+                    }
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "clstus4y74g0",
+                    "created": 1659167676497,
+                    "text": "SessionID",
+                    "layout_mind_offset": {
+                        "x": 86.99999925494211,
+                        "y": 255.249999832362
+                    }
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "clsu2wehd340",
+                    "created": 1659168312693,
+                    "text": "SessionStore",
+                    "layout_mind_offset": {
+                        "x": 512.5000035390258,
+                        "y": 202.25000199303017
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "clsu42n9zs00",
+                            "created": 1659168404650,
+                            "text": "sid",
+                            "layout_right_offset": {
+                                "x": 6.2499999068677425,
+                                "y": 9.999999850988388
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clsu44c94ig0",
+                            "created": 1659168408337,
+                            "text": "timeAccessed",
+                            "layout_right_offset": {
+                                "x": 3.7499999441206455,
+                                "y": 5.684341886080802e-14
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clsu483pjiw0",
+                            "created": 1659168416527,
+                            "text": "value",
+                            "layout_right_offset": {
+                                "x": 11.249999832361937,
+                                "y": 0
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clsu5gb88000",
+                            "created": 1659168512760,
+                            "text": "M",
+                            "layout_right_offset": {
+                                "x": 24.999999627471254,
+                                "y": -73.7499989010393
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clsu5j71tyw0",
+                                    "created": 1659168519038,
+                                    "text": "Set"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "clsu5lc1x6o0",
+                                    "created": 1659168523694,
+                                    "text": "Get"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "clsu5mxdpvc0",
+                                    "created": 1659168527160,
+                                    "text": "Del"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "clsu5w1kz280",
+                                    "created": 1659168547006,
+                                    "text": "SessionID"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "clsu35tuei80",
+                    "created": 1659168333213,
+                    "text": "Privider",
+                    "layout_mind_offset": {
+                        "x": 536.2500036321582,
+                        "y": -386.2500040046871
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "clsu65amfqw0",
+                            "created": 1659168567143,
+                            "text": "lock",
+                            "layout_right_offset": {
+                                "x": 30,
+                                "y": 49
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clsu67gtdbs0",
+                            "created": 1659168571871,
+                            "text": "sessions",
+                            "layout_right_offset": {
+                                "x": 26.75000001862645,
+                                "y": 40.75000001862645
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clsu6907ib40",
+                            "created": 1659168575221,
+                            "text": "list",
+                            "layout_right_offset": {
+                                "x": 33.24999998137355,
+                                "y": 31.75000001862651
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clsu6ay4qlc0",
+                            "created": 1659168579449,
+                            "text": "M",
+                            "layout_right_offset": {
+                                "x": 38.25000005587924,
+                                "y": -80.2499999813736
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clsu6c6ri400",
+                                    "created": 1659168582147,
+                                    "text": "SessionInit",
+                                    "layout_right_offset": {
+                                        "x": 41,
+                                        "y": 1
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "clsu6ec5gw00",
+                                    "created": 1659168586827,
+                                    "text": "SessionRead",
+                                    "layout_right_offset": {
+                                        "x": 42,
+                                        "y": -9
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "clsu6hqmzlk0",
+                                    "created": 1659168594233,
+                                    "text": "SessionDestory",
+                                    "layout_right_offset": {
+                                        "x": 45,
+                                        "y": -19
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "clsu76r4z2o0",
+                                    "created": 1659168648683,
+                                    "text": "SessionGC",
+                                    "layout_right_offset": {
+                                        "x": 46,
+                                        "y": -29
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "clsu7b59ie00",
+                                    "created": 1659168658244,
+                                    "text": "SessionUpdate",
+                                    "layout_right_offset": {
+                                        "x": 48,
+                                        "y": -36.750000018626395
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

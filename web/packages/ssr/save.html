@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<style>
+.a{
+  float:left;
+    background: #000;
+      overflow:hidden;
+}
+.b{
+      overflow:hidden;
+    background: #000;
+}
+.div1{background: #f00;}
+.div2{background: #0f0;}
+.div3{background: #00f;}
+.div4{background: #0ff;}
+.div1,
+.div2,
+.div3,
+.div4{
+  margin: 20px;
+}
+span {border: 1px solid #fff; margin: 20px;}
+</style>
+</head>
+<body>
+<div><a href="http://localhost:4000/bb.txt" download=
+"uu.txt">bb</a></div>
+<div><a href="./aa.png">aa</a></div>
+<div><img src="./aa.png" alt="aa"></div>
+<script>
+    async function kk(url, name){
+            re = await fetch(url)
+            re2 = await re.blob()
+            aa= document.createElement('a')
+            ul=URL.createObjectURL(re2)
+            aa.href=ul
+            console.log(re2, aa, ul)
+            aa.download=name
+            aa.click()
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+module.exports = {
+  root: true,
+  extends: [ 'airbnb', ],
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  settings: {
+      'import/resolver': {
+          'webpack': {
+              config:'./build/webpack.config.js',
+          },
+          'typescript':{},
+      }
+  },
+  plugins: [
+    'react',
+    '@typescript-eslint',
+    'jsdoc',
+  ],
+  rules: {
+    'no-extraneous-dependencies':['off',],
+    // 代码中console/debugger处理
+    'no-console': 'off',
+    // 关闭命名function表达式规则
+    'func-names': 'off',
+    // 关闭换行符转换
+    'linebreak-style': 'off',
+    // 禁止使用指定语法
+    'no-restricted-syntax': ['error', 'WithStatement'],
+    // 可以使用++/--
+    'no-plusplus': 'off',
+    // 使用单引号
+    'quotes': [
+        'error', 'single',
+    ],
+    // 强制最大可嵌深度为3
+    'max-depth': [
+        'error', 3,
+    ],
+    // 强制函数块中的语句最大50行
+    'max-statements': [
+        'error', 50,
+    ],
+    // 强制行的最大长度80,注释80
+    'max-len': [ 'error', 80 ],
+    // 链接地址中不可以使用 javascript:;
+    'no-script-url': 'off',
+    'jsx-a11y/anchor-is-valid': [ 'error', {
+        'components': [ 'Link' ],
+        'specialLink': [ 'to' ],
+    }],
+    // 使用了jsx语法的js代码文件其扩展名可以使用js或js
+    'react/jsx-filename-extension': ['error', {extensions: ['.js', '.jsx', '.ts', '.tsx',],},],
+    // 关闭引用依赖检查
+    'import/no-extraneous-dependencies': 'off',
+    // 扩展名处理
+    'import/extensions': ['error', {
+        'js': 'never',
+        'jsx': 'never',
+        'ts': 'never',
+        'tsx': 'never',
+    }],
+  },
+  globals: {
+      domain: true,
+      Atomics: 'readonly',
+      SharedArrayBuffer: 'readonly',
+  },
+};

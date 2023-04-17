@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html lang="en">
+  <head>
+    <title>{{name}}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+  </head>
+  <body>
+      {% if name %}
+      <p> {{name}} </p>
+      {% else %}
+      <p> no ~ name </p>
+      {% endif %}
+      <p> {{config}} </p>
+      <p> ------ </p>
+      <p> {{request.cookies}} </p>
+      <p> ------ </p>
+      <p> {{session}} </p>
+      <p> {{g}} </p>
+      <img alt="img" height="50" src="{{ url_for('static', filename='images/img.jpg') }}"/>
+      <form action="/login" method="post"><input type="text" name="name"/><input type="text" name="passwd"/><input type="submit"/></form>
+      <form action="/upload" method="post" enctype="multipart/form-data"><input type="file" name="the_file"/><input type="submit"/></form>
+      <script>
+          fetch("{{url_for('static', filename='500px.svg')}}")
+          .then(function(res){return res.blob()})
+          .then(function(res){console.log(res)})
+      </script>
+    </body>
+</html>
