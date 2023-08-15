@@ -17,7 +17,12 @@ func main() {
 
 	for _, v := range fileList {
 		go func(path string) {
-			ls := readLine(path)
+			var ls []string
+			if isJSON(path) {
+				ls = handleJSON(path)
+			} else {
+				ls = readLine(path)
+			}
 			ch <- ls
 		}(v)
 	}

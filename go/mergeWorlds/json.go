@@ -19,3 +19,7 @@ func filter(arr []string, test func(string) bool) (rst []string) {
 func test(s string) bool {
 	return strings.Index(s, "word") == -1
 }
+
+func isJSON(s string) bool {
+	return strings.HasSuffix(s, "json")
+}
