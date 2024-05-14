@@ -1,59 +1,61 @@
 package main
 
 import (
-	"flag"
 	"fmt"
-	"os"
-	"path/filepath"
+	"reflect"
+	"strconv"
 )
 
+type b struct {
+}
+
+func (B *b) String() string {
+	return "666"
+}
+
+func name[T string | int](s T) T {
+	return s
+}
+
 func main() {
-	flag.Parse()
-	roots := flag.Args()
-	if len(roots) == 0 {
-		roots = []string{"."}
-	}
+	v := reflect.ValueOf(3)
+	fmt.Println(v, v.String(), v.Type())
 
-	fileSizes := make(chan int64)
+	var bb stringer = &b{}
 
-	go func() {
-		for _, root := range roots {
-			walkDir(root, fileSizes)
+	fmt.Println(Sprint(1))
+	fmt.Println(Sprint(bb))
+
+	t := reflect.TypeOf(3)
+	s := reflect.TypeOf(bb)
+	fmt.Println(t.String())
+	fmt.Println(t)
+	fmt.Println(s.String())
+	fmt.Println(s)
+	fmt.Println(bb)
+
+	fmt.Println(name("rt"))
+	fmt.Println(name[int](8))
+}
+
+type stringer interface {
+	String() string
+}
+
+func Sprint(x any) string {
+	switch x := x.(type) {
+	case stringer:
+		return x.String()
+	case string:
+		return x
+	case int:
+		return strconv.Itoa(x)
+	case bool:
+		if x {
+			return "true"
 		}
-		close(fileSizes)
-	}()
-
-	var nfiles, nbytes int64
-	for size := range fileSizes {
-		nfiles++
-		nbytes += size
+		return "false"
+	default:
+		return "???"
 	}
-	printDiskUsage(nfiles, nbytes)
-}
-
-func printDiskUsage(nfiles, nbytes int64) {
-	fmt.Printf("%d files %.1f GB\n", nfiles, float64(nbytes)/1e9)
-}
-
-func walkDir(dir string, fileSizes chan<- int64) {
-	for _, entry := range dirents(dir) {
-		if entry.IsDir() {
-			subdir := filepath.Join(dir, entry.Name())
-			walkDir(subdir, fileSizes)
-		} else {
-			info, err := entry.Info()
-			if err != nil {
-				fmt.Fprintf(os.Stderr, "du1:%V\n", err)
-			}
-			fileSizes <- info.Size()
-		}
-	}
-}
-
-func dirents(dir string) []os.DirEntry {
-	entries, err := os.ReadDir(dir)
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "du1:%V\n", err)
-	}
-	return entries
 }
