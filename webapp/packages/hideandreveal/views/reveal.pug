@@ -1,0 +1,32 @@
+extends layout
+
+block main
+
+block content
+    form.ui.form(action="/reveal",method="post")
+        div.ui.error.message
+        div.field
+            label 密码
+            input(name="pass")
+            label 待提取文本
+            textarea(name="content", placeholder="")
+            label 提取结果
+            table.ui.celled.table
+                thead
+                    tr
+                        th 文本摘要
+                        th 版权所属信息
+                        th 用户名ID
+                        th 文本ID
+                        th 登录IP
+                        th 访问时间
+                tbody
+                    each item in list
+                        tr
+                            td #{item.cur}
+                            td #{item.right}
+                            td #{item.user}
+                            td #{item.text}
+                            td #{item.ip}
+                            td #{item.time}
+        button.ui.primary.button(type="submit") 提取

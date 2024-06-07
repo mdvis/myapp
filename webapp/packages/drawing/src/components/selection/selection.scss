@@ -1,0 +1,13 @@
+/**
+ * name: selection.scss
+ * author: Deve
+ * date: 2021-05-18
+ */
+.i-canvas-container {
+    position:relative;
+    & > .i-canvas-canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/semantic/semantic.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div.ui.menu
+        div.item
+            a(href="/") 首页
+        div.item
+            a(href="/steps/1") 水印嵌入
+        div.item
+            a(href="/reveal") 水印提取
+    block main
+        div.ui.two.column.centered.grid
+            div.column
+              div.ui.ordered.steps.grid
+                block s1
+                    div.step
+                      div.content
+                        div.title 第一步
+                        div.description 填写隐藏信息
+                block s2
+                    div.step
+                      div.content
+                        div.title 第二步
+                        div.description 填写文本内容
+                block s3
+                    div.step
+                      div.content
+                        div.title 第三步
+                        div.description 生成包含隐藏信息的内容
+    block contentWrap
+        div.ui.two.column.centered.grid
+            div.column
+              div.grid
+                block content
+
+    script(src='/javascripts/jquery-3.1.1.min.js')
+    script(src='/semantic/semantic.min.js')
+    script(src="/javascripts/check.js")

@@ -1,0 +1,31 @@
+extends layout
+
+block s1
+    div.active.step
+      div.content
+        div.title 第一步
+        div.description 填写隐藏信息
+
+
+block content
+    form.ui.form(action="/steps/2")
+        div.ui.error.message
+        div.field.required
+            label 版权所属
+            input(type="text", name="right", placeholder="")
+        div.field.required
+            label 用户ID
+            input(type="text", name="user", placeholder="")
+        div.field.required
+            label 文本ID
+            input(type="text", name="text", placeholder="")
+        div.field.required
+            label 登录IP
+            input(type="text", name="ip", placeholder="")
+        div.field.required
+            label 访问时间
+            input(type="text", name="time", placeholder="")
+        div.field
+            label 密码
+            input(type="text", name="pass", placeholder="")
+        button.ui.primary.button.right.floated(type="submit") 下一步

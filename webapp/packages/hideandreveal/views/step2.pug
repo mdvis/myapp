@@ -1,0 +1,22 @@
+extends layout
+
+block s1
+    div.completed.step
+      div.content
+        div.title 第一步
+        div.description 填写隐藏信息
+
+block s2
+    div.active.step
+        div.content
+            div.title 第二步
+            div.description 填写文本内容
+
+block content
+    form.ui.form(action="/steps/3",method="POST")
+        div.ui.error.message
+        div.field
+            label 文本内容
+            textarea(name="content", placeholder="")
+        button.ui.primary.button.right.floated(type="submit") 下一步
+        button.ui.primary.button.right.floated(onclick="history.go(-1)") 上一步

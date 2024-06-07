@@ -1,0 +1,25 @@
+extends layout
+
+block s1
+    div.completed.step
+      div.content
+        div.title 第一步
+        div.description 填写隐藏信息
+block s2
+    div.completed.step
+        div.content
+            div.title 第二步
+            div.description 填写文本内容
+block s3
+    div.active.step
+      div.content
+        div.title 第三步
+        div.description 生成包含隐藏信息的内容
+
+block content
+    form.ui.form(action="/steps/3")
+        div.ui.error.message
+        div.field
+            label
+            textarea(name="result", placeholder="") #{hidetext}
+    button.ui.primary.button.right.floated(style="margin-top:15px;",onclick="$('textarea').select();document.execCommand('copy')") 复制内容
