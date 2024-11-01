@@ -5,17 +5,15 @@ import (
 	"html/template"
 	"log"
 	"net/http"
-	"strings"
 	"strconv"
+	"time"
 )
 
+var a string
+
 func sayHelloName(w http.ResponseWriter, r *http.Request) {
-	r.ParseForm()
-	for k, v := range r.Form {
-		fmt.Println("key:", k)
-		fmt.Println("val:", strings.Join(v, ""))
-	}
-	fmt.Fprintf(w, "hello astaxie")
+	fs := http.FileServer(http.Dir("static/"))
+	fs.ServeHTTP(w, r)
 }
 
 func login(w http.ResponseWriter, r *http.Request) {
@@ -23,10 +21,12 @@ func login(w http.ResponseWriter, r *http.Request) {
 		t, _ := template.ParseFiles("login.gtpl")
 		t.Execute(w, nil)
 	} else {
-		r.ParseForm()
-		fmt.Println("username:", r.Form["username"])
-		fmt.Println("password:", r.Form["password"])
+		// r.ParseForm()
+		// fmt.Println("username:", r.Form["username"])
+		// fmt.Println("password:", r.Form["password"])
+		http.Redirect(w, r, "/sse?"+"name="+r.FormValue("username")+"&"+"pass="+r.FormValue("password"), http.StatusTemporaryRedirect)
 	}
+}
 
 func SSE(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", r.Header.Get("Origin"))
