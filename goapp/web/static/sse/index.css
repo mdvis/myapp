@@ -1,0 +1,29 @@
+/**
+ * name: index.css
+ * author: Deve
+ * date: 2024-11-01
+ */
+
+.data {
+  height: 400px;
+  overflow: auto;
+}
+
+.scroll {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.message {
+  background: green;
+}
+
+.notice {
+  background: blue;
+}
+
+.message,
+.notice {
+  width: 50px;
+}
