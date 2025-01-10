@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>一个点</title>
+  </head>
+  <body>
+    <canvas
+      id="webgl"
+      width="500"
+      height="500"
+      style="background-color: blue"></canvas>
+    <script>
+      var canvas = document.getElementById('webgl');
+      var gl = canvas.getContext('webgl');
+
+      var vertexShaderSource =
+        'void main(){' +
+        'gl_PointSize=10.0;' +
+        'gl_Position = vec4(1.0, 0.0, 0.0, 1.0);' +
+        '}';
+
+      var fragShaderSource =
+        'void main(){ gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0); }';
+
+      var data = new Float32Array([0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5]);
+
+      var program = initShader(gl, vertexShaderSource, fragShaderSource);
+      gl.drawArrays(gl.POINTS, 0, 1);
+
+      function initShader(gl, vertexShaderSource, fragmentShaderSource) {
+        var vertexShader = gl.createShader(gl.VERTEX_SHADER);
+        var fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+
+        gl.shaderSource(vertexShader, vertexShaderSource);
+        gl.shaderSource(fragmentShader, fragmentShaderSource);
+
+        gl.compileShader(vertexShader);
+        gl.compileShader(fragmentShader);
+
+        var program = gl.createProgram();
+
+        gl.attachShader(program, vertexShader);
+        gl.attachShader(program, fragmentShader);
+
+        gl.linkProgram(program);
+        gl.useProgram(program);
+
+        return program;
+      }
+    </script>
+  </body>
+</html>
