@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "plug",
+  "version": "1.0.0",
+  "description": "plug dsc",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "64": "./icon.png"
+  }
+}
