@@ -1,0 +1,1 @@
+{"code":"0000","msg":"一切ok","data":{"records":[{"followObjType":"set","followObjEnName":"set","followObjName":"集合","objId":"-K24uI8BdTCTo_raGSwD","objName":"人员集合-test","deleted":true},{"followObjType":"set","followObjEnName":"set","followObjName":"集合","objId":"PdPhn5ABR9_1LW-Fh1Es","objName":"1","deleted":true}],"total":2,"size":16,"current":1,"pages":1}}

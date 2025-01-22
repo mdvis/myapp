@@ -1,0 +1,1 @@
+{"code":"0000","msg":"一切ok","data":[{"followObjType":"dashboard","totals":1,"followObjTypeName":"看板"},{"followObjType":"set","totals":2,"followObjTypeName":"集合"},{"followObjType":"entity","totals":1,"followObjTypeName":"实体"}]}

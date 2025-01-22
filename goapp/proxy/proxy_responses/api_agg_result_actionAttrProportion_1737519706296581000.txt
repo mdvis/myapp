@@ -1,0 +1,1 @@
+{"code":"0000","msg":"一切ok","data":{"columns":[{"name":"login_ip","dataType":"string","cnName":"登陆ip","attrType":"feature","attrDetailType":"feature"},{"name":"nation","dataType":"string","cnName":"民族","attrType":"feature","attrDetailType":"feature","attrGroup":"基本信息"},{"name":"login_times","dataType":"double","cnName":"登录次数"}],"records":[]}}

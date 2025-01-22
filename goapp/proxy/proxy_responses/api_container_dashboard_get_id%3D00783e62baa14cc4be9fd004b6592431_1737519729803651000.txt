@@ -1,0 +1,1 @@
+{"code":"0000","msg":"一切ok","data":{"container":{"dashboardId":"00783e62baa14cc4be9fd004b6592431","dashboardName":"热天英特","dashboardDsc":null,"authType":"public","config":null,"thumbnail":null,"displayOrder":0},"cmpts":[]}}

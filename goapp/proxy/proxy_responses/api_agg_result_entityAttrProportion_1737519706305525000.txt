@@ -1,0 +1,1 @@
+{"code":"0000","msg":"一切ok","data":{"columns":[{"name":"nation","dataType":"string","cnName":"民族","attrType":"feature","attrDetailType":"feature","attrGroup":"基本信息"},{"name":"person_count","dataType":"double","cnName":"人数"}],"records":[{"nation":"汉族","person_count":2},{"nation":"满族","person_count":1},{"nation":"男","person_count":1}]}}

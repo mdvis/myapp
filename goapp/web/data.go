@@ -10,7 +10,6 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
-	"log"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/redis/go-redis/v9"
@@ -18,6 +17,8 @@ import (
 	"go.mongodb.org/mongo-driver/v2/bson"
 	"go.mongodb.org/mongo-driver/v2/mongo"
 	"go.mongodb.org/mongo-driver/v2/mongo/options"
+
+	log "github.com/sirupsen/logrus"
 )
 
 type User struct {
@@ -187,8 +188,8 @@ func md() {
 	collection := client.Database("baz").Collection("qux")
 
 	res, err := collection.InsertOne(context.Background(), bson.D{
-		{"name", "pi"},
-		{"value", 3.14159},
+		{Key: "name", Value: "pi"},
+		{Key: "value", Value: 3.14159},
 	})
 
 	if err != nil {

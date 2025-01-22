@@ -1,0 +1,1 @@
+{"code":"0000","msg":"一切ok","data":{"metricName":"login_times","metricCnName":"登录次数","currentDate":{"start":"2025-01-01 00:00:00","end":"2025-01-22 04:21:13"},"currentValue":0.0,"yearOnYearDate":{"start":"2024-01-01 00:00:00","end":"2024-01-22 04:21:13"},"yearOnYearValue":0.0,"yearOnYearRatio":"-","metricUnit":"次"}}

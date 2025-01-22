@@ -1,0 +1,1 @@
+{"code":"0000","msg":"一切ok","data":{"records":[{"portraitId":"b7a18dd4c0664d419a1031154436148b","portraitName":"新画像"},{"portraitId":"5e67258f41c3466ab19a59a0b015824e","portraitName":"测试画像"}],"total":2,"size":16,"current":1,"pages":1}}

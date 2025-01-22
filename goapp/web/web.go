@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 	"html/template"
-	"log"
 	"net/http"
+
+	log "github.com/sirupsen/logrus"
 )
 
 func escape(w http.ResponseWriter, r *http.Request) {
@@ -15,6 +16,11 @@ func escape(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+
+	log.WithFields(log.Fields{
+		"animal": "walrus",
+	}).Info("A walrus appears")
+
 	http.HandleFunc("/", static)
 	http.HandleFunc("/login", login)
 	http.HandleFunc("/event_source", sse)

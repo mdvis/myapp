@@ -1,0 +1,1 @@
+{"code":"0000","msg":"一切ok","data":{"dimDictType":"list","data":[{"label":"北京","value":"北京","icon":null,"color":null,"extend":null},{"label":"上海","value":"上海","icon":null,"color":null,"extend":null}]}}

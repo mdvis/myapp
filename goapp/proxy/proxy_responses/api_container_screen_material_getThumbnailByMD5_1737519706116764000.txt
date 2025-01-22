@@ -1,0 +1,1 @@
+{"code":"0000","msg":"一切ok","data":[{"src":"/material/d532f20d06d9b091c4e864d880ffb487/d532f20d06d9b091c4e864d880ffb487.png","md5":"d532f20d06d9b091c4e864d880ffb487","thumbnail":"/material/d532f20d06d9b091c4e864d880ffb487/d532f20d06d9b091c4e864d880ffb487.png","chunks":[],"chunkSize":0,"success":true}]}

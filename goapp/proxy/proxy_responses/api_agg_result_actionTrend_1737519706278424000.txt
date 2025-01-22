@@ -1,0 +1,1 @@
+{"code":"0000","msg":"一切ok","data":{"columns":[{"name":"event_time","dataType":"date","cnName":"登陆时间","attrType":"feature","attrDetailType":"feature"},{"name":"login_times","dataType":"double","cnName":"登录次数"}],"records":[]}}

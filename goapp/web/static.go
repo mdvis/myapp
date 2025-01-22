@@ -11,6 +11,6 @@ import (
 )
 
 func static(w http.ResponseWriter, r *http.Request) {
-	fs := http.FileServer(http.Dir("static/"))
+	fs := http.FileServer(http.Dir("web/static/"))
 	fs.ServeHTTP(w, r)
 }

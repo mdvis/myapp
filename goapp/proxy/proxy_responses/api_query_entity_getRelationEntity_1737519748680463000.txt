@@ -1,0 +1,1 @@
+{"code":"0000","msg":"一切ok","data":[{"label":"测试2","value":"wk8P-Uk6SFi21Gk58vQIRg","icon":null,"color":null,"extend":{"机构id":"22","机构名称":"测试2"}},{"label":"机构4","value":"O6kki6u0Tp6F8636Uaab3Q","icon":null,"color":null,"extend":{"机构id":"4","机构名称":"机构4"}},{"label":"机构3","value":"ngA7cnMkQ22qHWUnfmZy4Q","icon":null,"color":null,"extend":{"机构id":"123","机构名称":"机构3"}}]}

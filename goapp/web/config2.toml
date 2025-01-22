@@ -1,0 +1,24 @@
+sessionid = 'b39f21ac-aa88-4e87-a021-8bab87a60c75'
+title = 'TOML Example'
+
+[database]
+connection_max = 5000
+enabled = true
+ports = [8001, 8002, 8003]
+server = '192.168.1.1'
+
+[mysql]
+dbname = 'web'
+ip = '127.0.0.1'
+password = '12345678'
+port = '3306'
+username = 'root'
+
+[servers]
+[servers.alpha]
+dc = 'eqdc10'
+ip = '10.0.0.1'
+
+[servers.beta]
+dc = 'eqdc20'
+ip = '10.0.0.2'
